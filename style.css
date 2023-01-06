@@ -44,7 +44,10 @@ a {
 }
 
 button {
-  cursor: pointer;  
+  cursor: pointer;
+  color: transparent;
+  background-color: transparent;
+  border: none;
 }
 
 #root, #__next {
@@ -68,10 +71,13 @@ body {
   width: 100vw;
 }
 
+header, .whyContainer, .howContainer, footer {
+  padding: 1rem calc((100% - var(--max-width))/2);
+}
+
 header {
   display: flex;
   flex-direction: column;
-  padding: 1rem calc((100% - var(--max-width))/2);
   font-size: 1.2rem;
   font-weight:700;
 }
@@ -96,7 +102,7 @@ header {
   color: var(--primary);
 }
 
-header:nth-of-type(2) {
+.desktopHeaderSecondary {
   background-color: var(--primary);
 }
 
@@ -113,6 +119,7 @@ header:nth-of-type(2) {
 
 main {
   display: flex;
+  flex-direction: column;
   flex-grow: 1;
 }
 
@@ -147,25 +154,104 @@ main {
 }
 
 @media (max-width: 425px) {
-  .heroCTA {
-    margin: 20rem 1rem 1rem 1rem;
+
+  .heroContainer {
+    height: fit-content;
   }
+
+  .heroCTAContainer {
+    width: 100vw;
+    padding: 1rem;
+  }
+
+  .heroCTA {
+    padding: 1rem;
+    margin: 18rem 2rem 1rem 2rem;
+    opacity: 0.9;
+  }
+
 }
 
 .heroCTA h1 {
-  font-size: 2rem;
+  font-size: min(2rem, 6vw);
   text-align: left;
 }
 
 .heroCTA button {
   background-color: var(--primary);
   color: var(--secondary);
-  font-size: 24px;
-  width: 169px;
-  height: 48px;
+  font-size: min(1.5rem, 4vw);
+  width: min(169px, 30vw);
+  height: min(48px, 10vw);
   border: none;
   border-radius: 48px;
   margin-top: 16px;
+}
+
+.whyContainer {
+  background-color: var(--tertiary);
+  color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0 4rem 0;
+}
+
+.titleWrapper {
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: min(3rem, 8vw);
+  margin: 1.2rem;
+  text-shadow: 0 4px 4px gray;
+  flex-shrink: 1;
+}
+
+.cardGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--secondary);
+  width: min(322px, 80vw);
+  border: 3px solid var(--primary);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  padding: min(2rem, 8vw);
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 4px gray;
+}
+
+.cardIcon {
+  width: 100px;
+  height: 100px;
+  border: 3px solid var(--primary);
+}
+
+.cardTitle {
+  font-size: min(1.5rem, 6vw);
+  font-weight: 700;
+}
+
+.cardContent {
+  font-size: min(1.2rem, 5vw);
+}
+
+.card button {
+  background-color: var(--primary);
+  color: var(--secondary);
+  width: 200px;
+  height: 35px;
+  border-radius: 5px;
+  font-size: min(1rem, 4vw);
+  margin: 10px 0;
 }
 
 
