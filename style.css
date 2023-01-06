@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+/*
+font-family: 'Permanent Marker', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* css reset */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color: transparent;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* variables */
+
+:root {
+  --primary: #1565C0;
+  --secondary: #E6EFF8;
+  --tertiary: #ffffff;
+  --max-width: 1086px;
+}
+
+body {
+  background-color: var(--secondary);
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem calc((100% - var(--max-width))/2);
+  font-size: 1.2rem;
+  font-weight:700;
+}
+
+.primaryNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--primary);
+}
+
+.primaryNav .logo img {
+  width: 400px;
+}
+
+.links {
+  display: flex;
+  gap: 2rem
+}
+
+.primaryNav a {
+  color: var(--primary);
+}
+
+header:nth-of-type(2) {
+  background-color: var(--primary);
+}
+
+.secondaryNav {
+  margin: 0 auto;
+}
+
+.secondaryNav a {
+  color: var(--secondary);
+}
+
