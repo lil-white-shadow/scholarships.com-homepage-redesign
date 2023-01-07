@@ -299,6 +299,10 @@ main {
   font-size: min(1.5rem, 6vw)
 }
 
+.expandButton {
+  cursor: pointer;
+}
+
 .howContainer .expandButton, footer .expandButton {
   display: none;
   rotate: 180deg;
@@ -471,6 +475,10 @@ footer .expandableContent {
     padding-top: 0px;
   }
 
+  cardWide__textWrapper {
+    width: 100%;
+  }
+
   .cardWide .expandableContent {
     display: none;
     flex-direction: column;
@@ -510,10 +518,18 @@ footer .expandableContent {
 }
 
 @media (max-width: 620px) {
+
+  footer {
+    padding: 0;
+  }
+
+  footer .logo {
+    padding: 0 1rem;
+  }
   .footerGroupWrapperInner {
     width: 100vw;
     border-bottom: 3px solid var(--tertiary);
-    padding-bottom: 1rem;
+    padding: 1rem 2rem;
   }
 
   .footerGroupWrapperInner:last-of-type {
