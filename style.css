@@ -165,7 +165,7 @@ main {
   text-align: left;
 }
 
-.heroCTA button {
+.heroCTA button, .registerForm button {
   background-color: var(--primary);
   color: var(--secondary);
   font-size: min(1.5rem, 4vw);
@@ -429,6 +429,66 @@ footer .expandableContent {
 
 }
 
+.registerFormWrapperOuter {
+  padding: 1rem max(calc((100% - var(--max-width))/2), 2rem);
+  position: relative;
+  top: -450px;
+}
+
+.registerFormWrapper {
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: var(--primary);
+  width: min(700px, 90vw);
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  position: relative;
+  left: 5vw;
+  opacity: 0.9;
+}
+
+.registerFormWrapper h2 {
+  font-size: 2rem;
+  text-shadow: none;
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.registerForm fieldset {
+  border: none;
+  display: flex; 
+  gap: 2rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.registerForm input {
+  display: flex;
+  flex-grow: 1;
+  font-size: 1.5rem;
+  color: var(--primary);
+  border: none;
+  border-bottom: 3px solid rgba(0, 0, 0, .5);
+  background-color: transparent;
+  width: 100%;
+}
+
+.registerForm button {
+  align-self: center;
+  margin-top: 20px;
+}
+
+.registerForm input:focus {
+  outline: none;
+  background-color: var(--tertiary);
+}
+
 /* Hero and How section wide card responsive behavior */
 
 @media (min-width: 426px) and (max-width: 575px) {
@@ -549,5 +609,54 @@ footer .expandableContent {
 
   footer .expandableContent {
     display: none;
+  }
+}
+
+/* Register Form responsive behavior */
+
+@media (min-width: 576px) and (max-width: 775px) {
+
+  .registerFormWrapperOuter {
+    padding: 0 !important;
+    top: -200px;
+    margin-bottom: -120px;  }
+
+  .registerFormWrapper {
+    padding: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    left: 0;
+  }
+
+  .registerFormWrapper .sectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .registerForm fieldset {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 575px) {
+
+  .registerFormWrapperOuter {
+    padding: 0;
+    top: -200px;
+    margin-bottom: -120px;
+  }
+
+  .registerFormWrapper {
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    left: 0;
+  }
+
+  .registerFormWrapper .sectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .registerForm fieldset {
+    flex-wrap: wrap;
   }
 }
