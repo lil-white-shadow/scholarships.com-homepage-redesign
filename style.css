@@ -501,10 +501,6 @@ footer .expandableContent {
 
 @media (max-width: 425px) {
 
-  .heroContainer {
-    height: fit-content;
-  }
-
   .heroCTAContainer {
     width: 100vw;
     padding: 1rem;
@@ -512,7 +508,7 @@ footer .expandableContent {
 
   .heroCTA {
     padding: 1rem;
-    margin: 18rem 2rem 1rem 2rem;
+    margin: 12.5rem 2rem 1rem 2rem;
     opacity: 0.9;
   }
 
@@ -620,9 +616,11 @@ footer .expandableContent {
 
   .registerFormWrapperOuter {
     padding: 0 !important;
-    top: -200px;
-    margin-bottom: -120px;  }
-
+    position: relative;
+    top: -406px;
+    margin-bottom: -360px;
+  }
+  
   .registerFormWrapper {
     padding: 2rem;
     width: 80%;
@@ -643,8 +641,8 @@ footer .expandableContent {
 
   .registerFormWrapperOuter {
     padding: 0;
-    top: -200px;
-    margin-bottom: -120px;
+    top: -406px;
+    margin-bottom: -360px;
   }
 
   .registerFormWrapper {
