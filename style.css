@@ -292,12 +292,11 @@ main {
 
 .cardWide__textWrapper .cardTitle {
   font-family: 'Permanent Marker', cursive;
-  font-size: 2rem;
+  font-size: min(2rem, 8.2vw);
 }
 
 .cardWide__textWrapper .cardContent {
-  padding-left: 40px;
-  font-size: 28px;
+  font-size: min(1.5rem, 6vw)
 }
 
 footer {
@@ -390,9 +389,10 @@ footer .logo {
     width: 240px;
   }
 
-  .primaryNavMobile__expanded .links {
+  .primaryNavMobile .links {
     margin-top: 2rem;
     flex-direction: column;
+    gap: 1rem;
     width: 100%;
     align-items: flex-end;
   }
