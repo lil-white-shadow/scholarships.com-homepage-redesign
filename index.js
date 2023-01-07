@@ -5,6 +5,7 @@ const heroCTAButton = document.getElementById('heroCTAButton');
 registerButton = document.getElementById('registerButton');
 const registerFormWrapperOuter = document.getElementsByClassName('registerFormWrapperOuter')[0];
 const heroCTA = document.getElementsByClassName('heroCTA')[0];
+const heroContainer = document.getElementsByClassName('heroContainer')[0];
 
 heroCTAButton.addEventListener('click', displayRegisterForm);
 registerButton.addEventListener('click', displayCTA);
@@ -40,13 +41,17 @@ function toggleExpand(i) {
 }
 
 function displayRegisterForm() {
-  registerFormWrapperOuter.style.display = 'flex';
+  heroContainer.style.filter = 'blur(2px)';
   heroCTA.style.display = 'none';
+  setTimeout(() => {
+    registerFormWrapperOuter.style.display = 'flex';
+  }, 300);
 }
 
 function displayCTA() {
+  heroContainer.style.filter = 'blur(0)';
+  registerFormWrapperOuter.style.display = 'none';
   setTimeout(() => {
-    registerFormWrapperOuter.style.display = 'none';
     heroCTA.style.display = 'block';
-  }, 1000);
+  }, 300);
 }
