@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 /*
 font-family: 'Permanent Marker', cursive;
 font-family: 'Roboto', sans-serif;
+font-family: 'Pacifico', cursive;
 */
 
 /* css reset */
@@ -77,6 +80,11 @@ header, .whyContainer, .howContainer, footer {
 
 .whyContainer, .howContainer {
   padding-bottom: 4rem;
+}
+
+footer {
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 header {
@@ -291,6 +299,79 @@ main {
   font-size: 28px;
 }
 
+footer {
+  background-color: var(--primary);
+  color: var(--tertiary);
+  display: flex;
+  flex-direction: column;
+}
+
+footer .logo {
+  margin: 2rem 0;
+}
+
+.footerGroupWrapperOuter {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.footerGroupWrapperInner {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerGroupTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.footerGroupWrapperInner>a {
+  color: var(--tertiary);
+  font-size: 1.3rem;
+}
+
+.socialLinksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+  max-width: 380px;
+  justify-content: space-between;
+  align-self: center;
+  margin: 1rem 0;
+}
+
+.socialLinksContainer>a:nth-of-type(3) {
+  position: relative;
+  top: -2px;
+}
+
+.copyright, .signature {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 5px 0;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.signature {
+  margin-bottom: 14px;
+  font-size: 1.1rem;
+  font-family: 'Pacifico', cursive;
+}
+
+.heartIcon {
+  color: red;
+  position: relative;
+  top: 0px;
+  scale: 1.5;
+  margin: 0 10px;
+}
+
 @media (min-width: 426px) and (max-width: 575px) {
   .heroCTA {
     margin: 4rem 2rem;
@@ -331,4 +412,15 @@ main {
 
 }
 
+@media (max-width: 700px) {
+  .footerGroupWrapperOuter {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
 
+@media (max-width: 620px) {
+  .footerGroupWrapperInner {
+    width: 100%;
+  }
+}
