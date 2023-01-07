@@ -434,6 +434,7 @@ footer .expandableContent {
   position: relative;
   top: -450px;
   display: none;
+  margin-bottom: -445px;
 }
 
 .registerFormWrapper {
