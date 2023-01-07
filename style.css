@@ -72,7 +72,11 @@ body {
 }
 
 header, .whyContainer, .howContainer, footer {
-  padding: 1rem calc((100% - var(--max-width))/2);
+  padding: 1rem max(calc((100% - var(--max-width))/2), 2rem);
+}
+
+.whyContainer, .howContainer {
+  padding-bottom: 4rem;
 }
 
 header {
@@ -147,31 +151,6 @@ main {
   border-radius: 10px;
 }
 
-@media (min-width: 426px) and (max-width: 575px) {
-  .heroCTA {
-    margin: 4rem 2rem;
-  }
-}
-
-@media (max-width: 425px) {
-
-  .heroContainer {
-    height: fit-content;
-  }
-
-  .heroCTAContainer {
-    width: 100vw;
-    padding: 1rem;
-  }
-
-  .heroCTA {
-    padding: 1rem;
-    margin: 18rem 2rem 1rem 2rem;
-    opacity: 0.9;
-  }
-
-}
-
 .heroCTA h1 {
   font-size: min(2rem, 6vw);
   text-align: left;
@@ -194,7 +173,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 0 4rem 0;
 }
 
 .titleWrapper {
@@ -254,6 +232,103 @@ main {
   margin: 10px 0;
 }
 
+.howContainer {
+  color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.cardWide {
+  width: 90%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  border: none;
+  box-shadow: none;
+  justify-content: center;
+}
+
+.cardWide .cardIcon {
+  height: 250px;
+  width: 250px;
+  background-color: var(--tertiary);
+  border-radius: 50%;
+  border: none;
+}
+
+.cardWide .cardIconMobile {
+  display: none;
+}
+
+.cardWide .cardIcon img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cardGroup>.cardWide:nth-of-type(1)>.cardIcon>img {
+  position: relative;
+  top: 50px;
+  left: 10px;
+}
+
+.cardWide__textWrapper {
+  width: 60%;
+  min-width: min(600px, 80vw);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.cardWide__textWrapper .cardTitle {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2rem;
+}
+
+.cardWide__textWrapper .cardContent {
+  padding-left: 40px;
+  font-size: 28px;
+}
+
+@media (min-width: 426px) and (max-width: 575px) {
+  .heroCTA {
+    margin: 4rem 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .heroContainer {
+    height: fit-content;
+  }
+
+  .heroCTAContainer {
+    width: 100vw;
+    padding: 1rem;
+  }
+
+  .heroCTA {
+    padding: 1rem;
+    margin: 18rem 2rem 1rem 2rem;
+    opacity: 0.9;
+  }
+
+  .cardWide .cardIcon {
+    display: none;
+  }
+
+  .cardWide .cardIconMobile {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin-top: 1rem;
+    padding: 20px 0;
+    background-color: var(--secondary);
+    border: none;
+    align-self: center;
+  }
+
+}
 
 
