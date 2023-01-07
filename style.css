@@ -299,6 +299,11 @@ main {
   font-size: min(1.5rem, 6vw)
 }
 
+.howContainer .expandButton, footer .expandButton {
+  display: none;
+  rotate: 180deg;
+}
+
 footer {
   background-color: var(--primary);
   color: var(--tertiary);
@@ -327,9 +332,14 @@ footer .logo {
   margin-bottom: 0.8rem;
 }
 
-.footerGroupWrapperInner>a {
+.footerGroupWrapperInner>div>a {
   color: var(--tertiary);
   font-size: 1.3rem;
+}
+
+footer .expandableContent {
+  display: flex;
+  flex-direction: column;
 }
 
 .socialLinksContainer {
@@ -389,6 +399,22 @@ footer .logo {
     width: 240px;
   }
 
+  .primaryNavMobile .expandableContent {
+    display: none;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    background-color: var(--primary);
+    padding: 1rem;
+    z-index: 1;
+    opacity: .95;
+  }
+  
+  .primaryNavMobile a {
+    color: var(--secondary);
+  }
+
   .primaryNavMobile .links {
     margin-top: 2rem;
     flex-direction: column;
@@ -424,8 +450,40 @@ footer .logo {
     opacity: 0.9;
   }
 
+  .howContainer {
+    padding-bottom: 0;
+  }
+
+  .howContainer .expandButton {
+    display:inline-block;
+    width: 30px;
+    height: 30px;
+  }
+
+  .cardGroup {
+    gap: 30px;
+  }
+
+  .cardWide {
+    border-bottom: 3px solid var(--primary);
+    border-radius: 0;
+    width: 100vw;
+    padding-top: 0px;
+  }
+
+  .cardWide .expandableContent {
+    display: none;
+    flex-direction: column;
+  }
+
   .cardWide .cardIcon {
     display: none;
+  }
+
+  .cardWide .cardTitle {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
   }
 
   .cardWide .cardIconMobile {
@@ -453,6 +511,27 @@ footer .logo {
 
 @media (max-width: 620px) {
   .footerGroupWrapperInner {
-    width: 100%;
+    width: 100vw;
+    border-bottom: 3px solid var(--tertiary);
+    padding-bottom: 1rem;
+  }
+
+  .footerGroupWrapperInner:last-of-type {
+    border: none;
+  }
+
+  .footerGroupTitle {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer .expandButton {
+    display:inline-block;
+    width: 30px;
+    height: 30px;
+  }
+
+  footer .expandableContent {
+    display: none;
   }
 }
