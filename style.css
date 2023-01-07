@@ -125,6 +125,7 @@ header {
 .secondaryNav a {
   color: var(--secondary);
 }
+
 .mobileHeader {
   display: none;
 }
@@ -354,13 +355,13 @@ footer .logo {
 }
 
 .copyright {
-  font-size: 1.2rem;
+  font-size: min(1.2rem, 4.1vw);
   font-weight: 700;
 }
 
 .signature {
   margin-bottom: 14px;
-  font-size: 1.1rem;
+  font-size: min(1.1rem, 4.5vw);
   font-family: 'Pacifico', cursive;
 }
 
@@ -371,6 +372,34 @@ footer .logo {
   scale: 1.5;
   margin: 0 10px;
 }
+
+/* Header tablet & mobile */
+
+@media (max-width: 975px) {
+  .desktopHeader {
+    display: none;
+  }
+
+  .mobileHeader {
+    background-color: var(--secondary);
+    display: flex;
+    padding: 1rem;
+  }
+
+  .mobileHeader .primaryNav .logo {
+    width: 240px;
+  }
+
+  .primaryNavMobile__expanded .links {
+    margin-top: 2rem;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+  }
+
+}
+
+/* Hero and How section wide card responsive behavior */
 
 @media (min-width: 426px) and (max-width: 575px) {
   .heroCTA {
@@ -411,6 +440,9 @@ footer .logo {
   }
 
 }
+
+
+/* Footer links responsive behavior */
 
 @media (max-width: 700px) {
   .footerGroupWrapperOuter {
