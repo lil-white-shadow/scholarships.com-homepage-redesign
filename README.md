@@ -6,6 +6,11 @@ A responsive home page redesign for Scholarships.com using plain html, css, java
 ## UI Design Concept - Comparison of old vs new design and design manifesto
 Link: https://www.figma.com/file/DlHdjTzRmLoUT7PwtRWzsA/scholarships.com?node-id=0%3A1
 
+
+### Existing vs New design comparison 
+![Screenshot from 2023-01-08 02-18-48](https://user-images.githubusercontent.com/96262157/211186838-d4f1e3ba-0cf1-45b9-84e6-3c3defb9de42.png)
+
+
 ## Live Page - A responsive page per the new UI design
 Link: https://lil-white-shadow.github.io/scholarships.com-homepage-redesign/
 
@@ -22,22 +27,13 @@ Link: https://lil-white-shadow.github.io/scholarships.com-homepage-redesign/
 
  All of this achieved without using any external libraries or code snippets.
  
- ## Images & clips
+ ## Demos
  
  ### Hero image
  [Tab-1673161142105.webm](https://user-images.githubusercontent.com/96262157/211184426-cfcc1fdf-8664-4a1c-a268-02f9552bd022.webm)
 
  ### Register form and mobile menu
  [Tab-1673162342844.webm](https://user-images.githubusercontent.com/96262157/211185041-f904a7fa-3564-425d-ba04-b6625f05d17b.webm)
-
  
- ### Desktop
- ![image](https://user-images.githubusercontent.com/96262157/211184176-d7ca172c-292b-42b7-ae55-468a38dadda9.png) 
- 
- ### Tablet
- ![image](https://user-images.githubusercontent.com/96262157/211184227-d106690e-8cb3-44f3-b789-6df5be5faceb.png)
-
- ### Mobile
- ![image](https://user-images.githubusercontent.com/96262157/211184241-35c69cab-3347-4c21-9c33-84ad8aae8a06.png)
 
  
