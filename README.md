@@ -7,7 +7,7 @@ A responsive home page redesign for Scholarships.com using plain html, css, java
 Link: https://www.figma.com/file/DlHdjTzRmLoUT7PwtRWzsA/scholarships.com?node-id=0%3A1
 
 
-### Existing vs New design comparison 
+### Existing vs New design 
 ![Screenshot from 2023-01-08 02-18-48](https://user-images.githubusercontent.com/96262157/211186838-d4f1e3ba-0cf1-45b9-84e6-3c3defb9de42.png)
 
 
