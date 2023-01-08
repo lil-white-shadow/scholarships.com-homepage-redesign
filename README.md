@@ -3,15 +3,15 @@ A responsive home page redesign for Scholarships.com using plain html, css, java
 
 
 
-## UI Design Concept - Comparison of old vs new design and design manifesto
-Link: https://www.figma.com/file/DlHdjTzRmLoUT7PwtRWzsA/scholarships.com?node-id=0%3A1
+## UI Design Concept - Comparison of existing vs new design concept + design manifesto
+Figma Link: https://www.figma.com/file/DlHdjTzRmLoUT7PwtRWzsA/scholarships.com?node-id=0%3A1
 
 
-### Existing vs New design 
+### Existing vs New design
 ![Screenshot from 2023-01-08 02-18-48](https://user-images.githubusercontent.com/96262157/211186838-d4f1e3ba-0cf1-45b9-84e6-3c3defb9de42.png)
 
 
-## Live Page - A responsive page per the new UI design
+## Live Page - A responsive page per the new design concept
 Link: https://lil-white-shadow.github.io/scholarships.com-homepage-redesign/
 
 ## Highlights
